@@ -1,0 +1,76 @@
+/* -----Fonts---- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@500&display=swap');
+
+/* -----Common Styles---- */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+}
+.container{
+    width: 870px;
+    background-color: white;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+/* ---------Top players syles------- */
+.top_title{
+    color: #562EFF;
+    font-size: 24px;
+    padding-top: 30px;
+    margin-top: 0;
+}
+.Top-players{
+    margin-bottom: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-items: start;
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+}
+.player h3{
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+/* _---------Blog_Part____------Start */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog{
+    display: flex;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+    margin-bottom: 26px;
+    margin-top: 6px;
+}
+.blog_info a{
+    text-decoration: none;
+    color: #562EFF;
+
+}
+.blog_info p{
+    font-size: 16px;
+    color: #9F9F9F;
+    ;
+}
+
+/* ----------------Latest Course Start===----- */
