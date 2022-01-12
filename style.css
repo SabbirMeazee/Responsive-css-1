@@ -1,4 +1,5 @@
 /* -----Fonts---- */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@500&display=swap');
 
 /* -----Common Styles---- */
@@ -13,6 +14,7 @@ body{
     padding-left: 30px;
     padding-bottom: 30px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 /* ---------Top players syles------- */
@@ -74,3 +76,123 @@ hr{
 }
 
 /* ----------------Latest Course Start===----- */
+
+.courses{
+    display: flex;
+    justify-content: space-around;
+}
+.course{
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    margin-right: 15px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.course_photo img{
+    width: 224px;
+height: 104px;
+}
+.course_info p{
+    font-size: 16px;
+    color: #ED6B4F;
+}
+.course_ratings{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+}
+.fa-star.gold{
+    color: #FFC014;
+}
+.rating i{
+    color: #AEAEAE;
+}
+.stealcolor{
+    color: #AEAEAE;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.tomatocolor{
+    color: #ED6B4F;
+    background-color: #FEE5DF;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.tomatocolor i{
+    padding-right: 10px;
+}
+
+/* ---------====-Media Query----------==== */
+/* ================-=-=-=-----------
+
+/* =========mobile divice=-=-=-=-=-=-=-=-= */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+        padding-left: 0px;
+    }
+   .players{
+      grid-template-columns: repeat(2, 1fr) ;    
+   }
+   .player{
+    margin: 0px 10px;
+   }
+   .blogs {
+
+    grid-template-columns: repeat(1, 1fr);
+}
+.blog{
+    align-items: center;
+    margin-bottom: 10px;
+}
+.thumbnail img {
+    width: 177px;
+    height: 150px;
+    margin-right: 6px;
+    margin-bottom: 0px;
+}
+
+.courses{
+       flex-wrap: wrap;
+   }
+   .course{
+       padding-left: 15px;
+   }
+   .top_title{
+    padding-left: 5px;
+}
+}
+/* ====pad screen====== */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .thumbnail img {
+        width: 177px;
+        height: 117px;
+        margin-top: 6px;
+    }
+  .blog_info h3{
+        margin: 0px;
+    }
+    .courses{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .course{
+        margin-right: 30px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+}
